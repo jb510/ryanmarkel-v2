@@ -10,3 +10,6 @@
 [submodule "plugins/civil-footnotes"]
 	path = plugins/civil-footnotes
 	url = https://github.com/wp-plugins/civil-footnotes
+[submodule "plugins/liveblog"]
+	path = plugins/liveblog
+	url = https://github.com/Automattic/liveblog
