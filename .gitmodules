@@ -7,3 +7,6 @@
 [submodule "plugins/options-importer"]
 	path = plugins/options-importer
 	url = https://github.com/alleyinteractive/options-importer
+[submodule "plugins/civil-footnotes"]
+	path = plugins/civil-footnotes
+	url = https://github.com/wp-plugins/civil-footnotes
