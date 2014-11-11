@@ -13,3 +13,6 @@
 [submodule "plugins/liveblog"]
 	path = plugins/liveblog
 	url = https://github.com/Automattic/liveblog
+[submodule "plugins/syntaxhighlighter"]
+	path = plugins/syntaxhighlighter
+	url = https://github.com/Viper007Bond/syntaxhighlighter
