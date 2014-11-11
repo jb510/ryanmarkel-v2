@@ -1,0 +1,3 @@
+[submodule "plugins/wp-podcast"]
+	path = plugins/wp-podcast
+	url = https://github.com/Automattic/wp-podcast
