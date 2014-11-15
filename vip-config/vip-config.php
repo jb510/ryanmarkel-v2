@@ -12,3 +12,4 @@
  * - The WordPress.com VIP Team
  **/
  
+ define( 'WP_DEBUG', false );
