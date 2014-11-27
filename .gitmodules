@@ -13,3 +13,6 @@
 [submodule "plugins/syntaxhighlighter"]
 	path = plugins/syntaxhighlighter
 	url = https://github.com/Viper007Bond/syntaxhighlighter
+[submodule "plugins/jetpack"]
+	path = plugins/jetpack
+	url = http://github.com/Automattic/jetpack
