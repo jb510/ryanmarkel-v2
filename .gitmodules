@@ -13,3 +13,6 @@
 [submodule "plugins/jetpack"]
 	path = plugins/jetpack
 	url = http://github.com/Automattic/jetpack
+[submodule "plugins/vaultpress"]
+	path = plugins/vaultpress
+	url = https://github.com/wp-plugins/vaultpress/
