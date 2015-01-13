@@ -1,9 +1,6 @@
 [submodule "plugins/Edit-Flow"]
 	path = plugins/Edit-Flow
 	url = https://github.com/Automattic/Edit-Flow
-[submodule "plugins/civil-footnotes"]
-	path = plugins/civil-footnotes
-	url = https://github.com/wp-plugins/civil-footnotes
 [submodule "plugins/liveblog"]
 	path = plugins/liveblog
 	url = https://github.com/Automattic/liveblog
@@ -13,6 +10,3 @@
 [submodule "plugins/jetpack"]
 	path = plugins/jetpack
 	url = http://github.com/Automattic/jetpack
-[submodule "plugins/vaultpress"]
-	path = plugins/vaultpress
-	url = https://github.com/wp-plugins/vaultpress/
