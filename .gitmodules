@@ -10,3 +10,6 @@
 [submodule "plugins/jetpack"]
 	path = plugins/jetpack
 	url = http://github.com/Automattic/jetpack
+[submodule "plugins/vip-scanner"]
+	path = plugins/vip-scanner
+	url = git@github.com:Automattic/vip-scanner.git
