@@ -13,3 +13,6 @@
 [submodule "plugins/vip-scanner"]
 	path = plugins/vip-scanner
 	url = git@github.com:Automattic/vip-scanner.git
+[submodule "plugins/beacon"]
+	path = plugins/beacon
+	url = git@github.com:ryanmarkel/beacon.git
