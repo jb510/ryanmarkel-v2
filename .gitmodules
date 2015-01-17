@@ -16,3 +16,6 @@
 [submodule "plugins/beacon"]
 	path = plugins/beacon
 	url = git@github.com:ryanmarkel/beacon.git
+[submodule "plugins/autoptimize"]
+	path = plugins/autoptimize
+	url = git@github.com:futtta/autoptimize.git
