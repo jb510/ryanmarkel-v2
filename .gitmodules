@@ -19,3 +19,6 @@
 [submodule "plugins/import-external-images"]
 	path = plugins/import-external-images
 	url = git@github.com:MartyThornley/import-external-images.git
+[submodule "plugins/wp-tevko-responsive-images"]
+	path = plugins/wp-tevko-responsive-images
+	url = https://github.com/ResponsiveImagesCG/wp-tevko-responsive-images.git
