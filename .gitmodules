@@ -22,3 +22,6 @@
 [submodule "plugins/wp-tevko-responsive-images"]
 	path = plugins/wp-tevko-responsive-images
 	url = https://github.com/ResponsiveImagesCG/wp-tevko-responsive-images.git
+[submodule "plugins/https-all-the-things"]
+	path = plugins/https-all-the-things
+	url = https://github.com/ryanmarkel/https-all-the-things.git
