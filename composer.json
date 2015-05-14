@@ -1,10 +1,18 @@
 {
+	"extra": {
+		"installer-paths": {
+			"plugins/{$name}/": ["type:wordpress-plugin"],
+			"themes/{$name}/": ["type:wordpress-theme"]
+		}
+	},
+
 	"repositories": [
 	{
 		"type": "vcs",
 		"url": "https://github.com/ryanmarkel/https-all-the-things"
 		}
 	],
+	
 	"require": {
 		"ryanmarkel/https-all-the-things": "~1.0"
 	}
