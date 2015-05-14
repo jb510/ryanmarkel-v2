@@ -11,6 +11,9 @@
  * Domain Path: /languages/
  */
 
+if ( class_exists( 'VaultPress' ) ) {
+	return;
+
 // don't call the file directly
 if ( !defined( 'ABSPATH' ) )
 	return;
@@ -2370,3 +2373,4 @@ require_once( dirname( __FILE__ ) . '/class.vaultpress-hotfixes.php' );
 $hotfixes = new VaultPress_Hotfixes();
 
 include_once( dirname( __FILE__ ) . '/cron-tasks.php' );
+} // if ( class_exists( 'VaultPress' ) ) {
