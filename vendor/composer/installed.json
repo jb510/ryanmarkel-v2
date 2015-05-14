@@ -126,5 +126,38 @@
             "source": "https://github.com/ryanmarkel/https-all-the-things/tree/1.0",
             "issues": "https://github.com/ryanmarkel/https-all-the-things/issues"
         }
+    },
+    {
+        "name": "aesop/aesop-story-engine",
+        "version": "1.6.1",
+        "version_normalized": "1.6.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bearded-avenger/aesop-core.git",
+            "reference": "087d4050c94f229a3ea6cc0e1318a394e62a7981"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bearded-avenger/aesop-core/zipball/087d4050c94f229a3ea6cc0e1318a394e62a7981",
+            "reference": "087d4050c94f229a3ea6cc0e1318a394e62a7981",
+            "shasum": ""
+        },
+        "require": {
+            "composer/installers": "~1.0.6"
+        },
+        "time": "2015-04-20 17:14:16",
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "description": "Aesop",
+        "keywords": [
+            "aesop",
+            "core",
+            "plugin",
+            "wordpress"
+        ],
+        "support": {
+            "source": "https://github.com/bearded-avenger/aesop-core/tree/1.6.1",
+            "issues": "https://github.com/bearded-avenger/aesop-core/issues"
+        }
     }
 ]

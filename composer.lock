@@ -4,8 +4,39 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a9283c9bb6091fb9101fb235571b19c3",
+    "hash": "0e9d20fe0c882204ef2df834323ce482",
     "packages": [
+        {
+            "name": "aesop/aesop-story-engine",
+            "version": "1.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bearded-avenger/aesop-core.git",
+                "reference": "087d4050c94f229a3ea6cc0e1318a394e62a7981"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bearded-avenger/aesop-core/zipball/087d4050c94f229a3ea6cc0e1318a394e62a7981",
+                "reference": "087d4050c94f229a3ea6cc0e1318a394e62a7981",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0.6"
+            },
+            "type": "wordpress-plugin",
+            "description": "Aesop",
+            "keywords": [
+                "aesop",
+                "core",
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/bearded-avenger/aesop-core/tree/1.6.1",
+                "issues": "https://github.com/bearded-avenger/aesop-core/issues"
+            },
+            "time": "2015-04-20 17:14:16"
+        },
         {
             "name": "composer/installers",
             "version": "v1.0.21",

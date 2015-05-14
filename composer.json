@@ -10,10 +10,15 @@
 	{
 		"type": "vcs",
 		"url": "https://github.com/ryanmarkel/https-all-the-things"
-		}
+		},
+	{
+		"type": "vcs",
+		"url": "https://github.com/bearded-avenger/aesop-core"
+	}
 	],
 	
 	"require": {
+		"aesop/aesop-story-engine": "~1.0",
 		"ryanmarkel/https-all-the-things": "~1.0"
 	}
 }
