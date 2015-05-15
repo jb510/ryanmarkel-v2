@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Functionality Plugin
+ * Plugin Name: ryanmarkel.com Functionality Plugin
  * Plugin URI: http://ryanmarkel.com/
  * Description: Where we put things that are for other things.
  * Version: 1.0
