@@ -134,16 +134,16 @@
         },
         {
             "name": "ryanmarkel/https-all-the-things",
-            "version": "1.0",
+            "version": "v1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ryanmarkel/https-all-the-things.git",
-                "reference": "fc91acfd5a8edef02f1ee67e62fb3399bec485b9"
+                "reference": "9a635d4d0e8516ad2f377c6bc95b492c08588046"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ryanmarkel/https-all-the-things/zipball/fc91acfd5a8edef02f1ee67e62fb3399bec485b9",
-                "reference": "fc91acfd5a8edef02f1ee67e62fb3399bec485b9",
+                "url": "https://api.github.com/repos/ryanmarkel/https-all-the-things/zipball/9a635d4d0e8516ad2f377c6bc95b492c08588046",
+                "reference": "9a635d4d0e8516ad2f377c6bc95b492c08588046",
                 "shasum": ""
             },
             "require": {
@@ -156,10 +156,10 @@
             "description": "Zeroconf HTTPS for WordPress frontends.",
             "homepage": "http://ryanmarkel.com/",
             "support": {
-                "source": "https://github.com/ryanmarkel/https-all-the-things/tree/1.0",
+                "source": "https://github.com/ryanmarkel/https-all-the-things/tree/v1.1",
                 "issues": "https://github.com/ryanmarkel/https-all-the-things/issues"
             },
-            "time": "2015-05-14 19:34:40"
+            "time": "2015-05-19 14:08:40"
         },
         {
             "name": "wpackagist-plugin/civil-footnotes",
