@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: ryanmarkel.com Functionality Plugin
- * Plugin URI: http://ryanmarkel.com/
+ * Plugin URI: https://ryanmarkel.com/
  * Description: Where we put things that are for other things.
  * Version: 1.0
  * Author: Ryan Markel

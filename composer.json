@@ -17,6 +17,18 @@
 		},
 	{
 		"type": "vcs",
+		"url": "https://github.com/ryanmarkel/marginal"
+		},
+	{
+		"type": "vcs",
+		"url": "https://github.com/ryanmarkel/beacon"
+		},
+	{
+		"type": "vcs",
+		"url": "https://github.com/ryanmarkel/ryanmarkel-functionality"
+		},
+	{
+		"type": "vcs",
 		"url": "https://github.com/bearded-avenger/aesop-core"
 	}
 	],
@@ -24,7 +36,9 @@
 	"require": {
 		"aesop/aesop-story-engine": "~1.0",
 		"ryanmarkel/https-all-the-things": "~1.0",
-		"wpackagist-plugin/civil-footnotes": "~1.0",
+		"ryanmarkel/marginal": "~1.0",
+		"ryanmarkel/beacon": "~0.0",
+		"ryanmarkel/ryanmarkel-functionality": "~1.0",
 		"wpackagist-plugin/debug-bar": "~0.0"
 	}
 }
