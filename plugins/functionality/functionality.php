@@ -9,3 +9,6 @@
  */
  
 add_filter( 'jetpack_sso_bypass_login_forward_wpcom', '__return_true' );
+
+if ( is_admin() )
+	echo "Hello, World!";
