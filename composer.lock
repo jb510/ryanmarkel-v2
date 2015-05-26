@@ -1,0 +1,280 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "bb330b135ab16768a3d4888ea756c2ae",
+    "packages": [
+        {
+            "name": "aesop/aesop-story-engine",
+            "version": "1.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bearded-avenger/aesop-core.git",
+                "reference": "087d4050c94f229a3ea6cc0e1318a394e62a7981"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bearded-avenger/aesop-core/zipball/087d4050c94f229a3ea6cc0e1318a394e62a7981",
+                "reference": "087d4050c94f229a3ea6cc0e1318a394e62a7981",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0.6"
+            },
+            "type": "wordpress-plugin",
+            "description": "Aesop",
+            "keywords": [
+                "aesop",
+                "core",
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/bearded-avenger/aesop-core/tree/1.6.1",
+                "issues": "https://github.com/bearded-avenger/aesop-core/issues"
+            },
+            "time": "2015-04-20 17:14:16"
+        },
+        {
+            "name": "composer/installers",
+            "version": "v1.0.21",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
+                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
+                "shasum": ""
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": "Composer\\Installers\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Composer\\Installers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "http://composer.github.com/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
+                "SMF",
+                "Thelia",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "elgg",
+                "fuelphp",
+                "grav",
+                "installer",
+                "joomla",
+                "kohana",
+                "laravel",
+                "lithium",
+                "magento",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "moodle",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "puppet",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "zend",
+                "zikula"
+            ],
+            "time": "2015-02-18 17:17:01"
+        },
+        {
+            "name": "ryanmarkel/beacon",
+            "version": "0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ryanmarkel/beacon.git",
+                "reference": "bed6acad831a4ff1e451a1f77e1f9d4ae70ea565"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ryanmarkel/beacon/zipball/bed6acad831a4ff1e451a1f77e1f9d4ae70ea565",
+                "reference": "bed6acad831a4ff1e451a1f77e1f9d4ae70ea565",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Simple podcasting for WordPress.",
+            "homepage": "http://ryanmarkel.com/plugins/beacon/",
+            "support": {
+                "source": "https://github.com/ryanmarkel/beacon/tree/0.2",
+                "issues": "https://github.com/ryanmarkel/beacon/issues"
+            },
+            "time": "2015-05-25 02:38:22"
+        },
+        {
+            "name": "ryanmarkel/https-all-the-things",
+            "version": "v1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ryanmarkel/https-all-the-things.git",
+                "reference": "9a635d4d0e8516ad2f377c6bc95b492c08588046"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ryanmarkel/https-all-the-things/zipball/9a635d4d0e8516ad2f377c6bc95b492c08588046",
+                "reference": "9a635d4d0e8516ad2f377c6bc95b492c08588046",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Zeroconf HTTPS for WordPress frontends.",
+            "homepage": "http://ryanmarkel.com/",
+            "support": {
+                "source": "https://github.com/ryanmarkel/https-all-the-things/tree/v1.1",
+                "issues": "https://github.com/ryanmarkel/https-all-the-things/issues"
+            },
+            "time": "2015-05-19 14:08:40"
+        },
+        {
+            "name": "ryanmarkel/marginal",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ryanmarkel/marginal.git",
+                "reference": "2f7e3fc8d77c700e3e029230f5f2a89d63890cbd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ryanmarkel/marginal/zipball/2f7e3fc8d77c700e3e029230f5f2a89d63890cbd",
+                "reference": "2f7e3fc8d77c700e3e029230f5f2a89d63890cbd",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Simple and semantic footnotes for WordPress.",
+            "homepage": "https://ryanmarkel.com/plugins/marginal/",
+            "support": {
+                "source": "https://github.com/ryanmarkel/marginal/tree/1.0",
+                "issues": "https://github.com/ryanmarkel/marginal/issues"
+            },
+            "time": "2015-05-25 01:40:54"
+        },
+        {
+            "name": "ryanmarkel/ryanmarkel-functionality",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ryanmarkel/ryanmarkel-functionality.git",
+                "reference": "bb9ae7a01d6d4da9c4ef95721e56c74d7c58f9ca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ryanmarkel/ryanmarkel-functionality/zipball/bb9ae7a01d6d4da9c4ef95721e56c74d7c58f9ca",
+                "reference": "bb9ae7a01d6d4da9c4ef95721e56c74d7c58f9ca",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Functionality plugin for ryanmarkel.com.",
+            "homepage": "http://ryanmarkel.com/",
+            "support": {
+                "source": "https://github.com/ryanmarkel/ryanmarkel-functionality/tree/1.0.1",
+                "issues": "https://github.com/ryanmarkel/ryanmarkel-functionality/issues"
+            },
+            "time": "2015-05-25 02:47:50"
+        },
+        {
+            "name": "wpackagist-plugin/debug-bar",
+            "version": "0.8.2",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/debug-bar/",
+                "reference": "tags/0.8.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/debug-bar.0.8.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/debug-bar/"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
