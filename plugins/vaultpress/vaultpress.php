@@ -11,8 +11,7 @@
  * Domain Path: /languages/
  */
 
-if ( class_exists( 'VaultPress' ) ) {
-	return;
+if ( ! class_exists( 'VaultPress' ) ) {
 
 // don't call the file directly
 if ( !defined( 'ABSPATH' ) )
