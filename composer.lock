@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bb330b135ab16768a3d4888ea756c2ae",
+    "hash": "f846e4cb25352bb55f792f5f5acdceab",
     "packages": [
         {
             "name": "aesop/aesop-story-engine",
@@ -36,6 +36,35 @@
                 "issues": "https://github.com/bearded-avenger/aesop-core/issues"
             },
             "time": "2015-04-20 17:14:16"
+        },
+        {
+            "name": "automattic/msm-sitemap",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Automattic/msm-sitemap.git",
+                "reference": "6db5ec412f2fd557579fe28257838696d8fb0bed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Automattic/msm-sitemap/zipball/6db5ec412f2fd557579fe28257838696d8fb0bed",
+                "reference": "6db5ec412f2fd557579fe28257838696d8fb0bed",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Comprehensive sitemaps for your WordPress.com VIP site.",
+            "homepage": "https://vip.wordpress.com/plugins/msm-sitemap/",
+            "support": {
+                "source": "https://github.com/Automattic/msm-sitemap/tree/master",
+                "issues": "https://github.com/Automattic/msm-sitemap/issues"
+            },
+            "time": "2015-05-14 20:55:29"
         },
         {
             "name": "composer/installers",

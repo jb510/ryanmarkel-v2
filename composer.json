@@ -30,11 +30,20 @@
 	{
 		"type": "vcs",
 		"url": "https://github.com/bearded-avenger/aesop-core"
+		},
+	{
+		"type": "vcs",
+		"url": "https://github.com/tlovett1/Safe-Redirect-Manager"
+	},
+	{
+		"type": "vcs",
+		"url": "https://github.com/Automattic/msm-sitemap"
 	}
 	],
 	
 	"require": {
 		"aesop/aesop-story-engine": "~1.0",
+		"automattic/msm-sitemap": "~1.0",
 		"ryanmarkel/https-all-the-things": "~1.0",
 		"ryanmarkel/marginal": "~1.0",
 		"ryanmarkel/beacon": "~0.0",
