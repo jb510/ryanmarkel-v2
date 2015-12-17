@@ -8,34 +8,39 @@
     "packages": [
         {
             "name": "aesop/aesop-story-engine",
-            "version": "1.6.1",
+            "version": "1.6.6",
             "source": {
                 "type": "git",
-                "url": "https://github.com/bearded-avenger/aesop-core.git",
-                "reference": "087d4050c94f229a3ea6cc0e1318a394e62a7981"
+                "url": "https://github.com/hyunsupul/aesop-core.git",
+                "reference": "1aebf2c7ae86c068fbdd6e4064db31ff828f5598"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bearded-avenger/aesop-core/zipball/087d4050c94f229a3ea6cc0e1318a394e62a7981",
-                "reference": "087d4050c94f229a3ea6cc0e1318a394e62a7981",
+                "url": "https://api.github.com/repos/hyunsupul/aesop-core/zipball/1aebf2c7ae86c068fbdd6e4064db31ff828f5598",
+                "reference": "1aebf2c7ae86c068fbdd6e4064db31ff828f5598",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "~1.0.6"
             },
             "type": "wordpress-plugin",
-            "description": "Aesop",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Aesop Story Engine - Open-sourced suite of components that empower interactive storytelling in WordPress.",
+            "homepage": "http://aesopstoryengine.com",
             "keywords": [
                 "aesop",
                 "core",
                 "plugin",
+                "storytelling",
                 "wordpress"
             ],
             "support": {
-                "source": "https://github.com/bearded-avenger/aesop-core/tree/1.6.1",
-                "issues": "https://github.com/bearded-avenger/aesop-core/issues"
+                "issues": "https://github.com/bearded-avenger/aesop-core/issues",
+                "source": "https://github.com/hyunsupul/aesop-core/tree/1.6.6"
             },
-            "time": "2015-04-20 17:14:16"
+            "time": "2015-09-22 21:49:15"
         },
         {
             "name": "automattic/msm-sitemap",
@@ -68,17 +73,20 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.0.21",
+            "version": "v1.0.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45"
+                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
-                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
+                "url": "https://api.github.com/repos/composer/installers/zipball/bd9b14f094c89c8b5804a4e41edeb7853bb85046",
+                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046",
                 "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "1.0.0"
             },
             "replace": {
                 "roundcube/plugin-installer": "*",
@@ -88,9 +96,9 @@
                 "composer/composer": "1.0.*@dev",
                 "phpunit/phpunit": "4.1.*"
             },
-            "type": "composer-installer",
+            "type": "composer-plugin",
             "extra": {
-                "class": "Composer\\Installers\\Installer",
+                "class": "Composer\\Installers\\Plugin",
                 "branch-alias": {
                     "dev-master": "1.0-dev"
                 }
@@ -159,7 +167,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-02-18 17:17:01"
+            "time": "2015-10-29 23:28:48"
         },
         {
             "name": "ryanmarkel/beacon",

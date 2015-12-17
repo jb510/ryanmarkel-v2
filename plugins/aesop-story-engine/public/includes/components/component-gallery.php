@@ -45,11 +45,14 @@ class AesopCoreGallery {
 		// gallery caption
 		$gallery_caption = get_post_meta( $gallery_id, 'aesop_gallery_caption', true );
 
+		// custom classes
+		$classes = aesop_component_classes( 'gallery', '' );
+
 		ob_start();
 
 		do_action( 'aesop_gallery_before', $type, $gallery_id, $atts, $unique ); // action
 
-		?><div id="aesop-gallery-<?php echo esc_attr( $unique );?>" <?php echo aesop_component_data_atts( 'gallery', $gallery_id, $atts );?> class="aesop-component aesop-gallery-component aesop-<?php echo esc_attr( $type );?>-gallery-wrap <?php if ( empty( $gallery_id ) ) { echo 'empty-gallery'; }?> "><?php
+		?><div id="aesop-gallery-<?php echo esc_attr( $unique );?>" <?php echo aesop_component_data_atts( 'gallery', $gallery_id, $atts );?> class="aesop-component aesop-gallery-component aesop-<?php echo esc_attr( $type );?>-gallery-wrap <?php echo sanitize_html_class( $classes );?> <?php if ( empty( $gallery_id ) ) { echo 'empty-gallery'; }?> "><?php
 
 		do_action( 'aesop_gallery_inside_top', $type, $gallery_id, $atts, $unique ); // action
 
@@ -81,6 +84,7 @@ class AesopCoreGallery {
 			}
 
 			// provide the edit link to the backend edit if Aesop Editor is not active
+
 			if ( ! function_exists( 'lasso_editor_components' ) && is_user_logged_in() && current_user_can( 'edit_post', get_the_ID() ) ) {
 
 				$url = admin_url( 'post.php?post='.$gallery_id.'&action=edit' );
@@ -257,7 +261,7 @@ class AesopCoreGallery {
 	}
 
 	/**
-	 * Draws a gallery with images in sequencal order
+	 * Draws a gallery with images in sequential order
 	 *
 	 * @since    1.0.0
 	 */
