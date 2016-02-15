@@ -1,55 +1,28 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "bb330b135ab16768a3d4888ea756c2ae",
+    "hash": "97fd88f6fd3839878e2666921bfaa984",
+    "content-hash": "8041f6831f72b90619f6974fc0be64d0",
     "packages": [
         {
-            "name": "aesop/aesop-story-engine",
-            "version": "1.6.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/bearded-avenger/aesop-core.git",
-                "reference": "087d4050c94f229a3ea6cc0e1318a394e62a7981"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/bearded-avenger/aesop-core/zipball/087d4050c94f229a3ea6cc0e1318a394e62a7981",
-                "reference": "087d4050c94f229a3ea6cc0e1318a394e62a7981",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "~1.0.6"
-            },
-            "type": "wordpress-plugin",
-            "description": "Aesop",
-            "keywords": [
-                "aesop",
-                "core",
-                "plugin",
-                "wordpress"
-            ],
-            "support": {
-                "source": "https://github.com/bearded-avenger/aesop-core/tree/1.6.1",
-                "issues": "https://github.com/bearded-avenger/aesop-core/issues"
-            },
-            "time": "2015-04-20 17:14:16"
-        },
-        {
             "name": "composer/installers",
-            "version": "v1.0.21",
+            "version": "v1.0.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45"
+                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
-                "reference": "d64e23fce42a4063d63262b19b8e7c0f3b5e4c45",
+                "url": "https://api.github.com/repos/composer/installers/zipball/6213d900e92647831f7a406d5c530ea1f3d4360e",
+                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e",
                 "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
             },
             "replace": {
                 "roundcube/plugin-installer": "*",
@@ -59,9 +32,9 @@
                 "composer/composer": "1.0.*@dev",
                 "phpunit/phpunit": "4.1.*"
             },
-            "type": "composer-installer",
+            "type": "composer-plugin",
             "extra": {
-                "class": "Composer\\Installers\\Installer",
+                "class": "Composer\\Installers\\Plugin",
                 "branch-alias": {
                     "dev-master": "1.0-dev"
                 }
@@ -130,7 +103,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-02-18 17:17:01"
+            "time": "2016-01-27 12:54:22"
         },
         {
             "name": "ryanmarkel/beacon",
