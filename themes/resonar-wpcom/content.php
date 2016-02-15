@@ -25,6 +25,16 @@
 	<?php the_title( sprintf( '<header class="entry-header"><h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2></header>' ); ?>
 
 	<div class="entry-summary">
-		<?php the_excerpt(); ?>
+	    <?php
+	        if ( strpos( $post->post_content, '<!--more' ) ) {
+	            the_content( sprintf(
+	                /* translators: %s: Name of current post. */
+	                wp_kses( __( 'Continue reading %s', 'resonar' ), array( 'span' => array( 'class' => array() ) ) ),
+	                the_title( '<span class="screen-reader-text">"', '"</span>', false )
+	            ) );
+	        } else {
+	            the_excerpt();
+	        }
+	    ?>
 	</div><!-- .entry-summary -->
 </article><!-- #post-## -->

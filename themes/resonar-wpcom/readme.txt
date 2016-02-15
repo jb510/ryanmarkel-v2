@@ -79,23 +79,161 @@ Social networks that aren't currently supported will be indicated by a generic s
 
 == Changelog ==
 
-= 1.0.3 - April 15 2015 =
-* Add a custom background callback to apply a custom background color to some elements.
-* Minor style tweaks.
+= 13 August 2015 =
+* Make sure images aren't being displayed in .entry-summary
 
-= 1.0.2 - Mar 25 2015 =
+= 12 August 2015 =
+* Improve "Continue reading" link and make sure it's being displayed even when user uses a manual excerpt.
+
+= 15 July 2015 =
+* Always use https when loading Google Fonts.
+
+= 14 July 2015 =
+* Make sure escape custom header image attributes.
+
+= 10 July 2015 =
+* Small position tweak for avatars in comments.
+
+= 8 July 2015 =
+* Declare the global post for portfolio meta to avoid php notice.
+
+= 9 June 2015 =
+* Improve accessibility for sidebar and sidebar toggle button.
+* Fix a typo in readme.txt
+
+= 8 June 2015 =
+* Increment the version number.
+* Remove unnecessary space.
+* Change the toggle button text accordingly so that it's more accurate. Also cleanup for js variables.
+* Log the last change in readme.txt
+* Make sure aria-hidden for sidebar and sidebar toggle changes accordingly.
+* Remove navigation role attribute from socila navigation because they are external links.
+
+= 29 April 2015 =
+* Log the last change in readme.txt.
+* Add the blog name as an alt attribute in the custom header image.
+
+= 21 April 2015 =
+* Reset a custom background arguments for WP.com to use the default callback.
+
+= 14 April 2015 =
+* Add a custom background callback to apply a custom background color to some elements for self hosted version.
+
+= 9 April 2015 =
+* Remove unnecesssary custom descriptions.
+
+= 5 April 2015 =
+* Style tweak for Top Posts Widget.
+* Move Goodreads widget style to the main stylesheet since it's in Jetpack.
+
+= 2 April 2015 =
+* Style tweaks.
+
+= 25 March 2015 =
 * Remove underline from post date on featured image.
-* Remove text shadow from underlined link.
-* Convert border color to rgba value.
-* Change avatar size in comments.
 
-= 1.0.1 - Mar 24 2015 =
-* Minor style adjustments.
-* Fix gallery widget in sidebar.
+= 24 March 2015 =
+* Log the recent changes and increment its version number.
+
+= 22 March 2015 =
+* Adjust margins for syntaxhighlighter.
+
+= 19 March 2015 =
+* Style tweak for Infinite Scroll.
+
+= 18 March 2015 =
+* Override default gallery widget content width and triger resize event so that the widget displays correctly.
+* Remove underline from the link about the ad.
+
+= 17 March 2015 =
+* Add bottom margin to Spotify embed.
+* Remove unused animation keyframes.
+* Adjust page header position.
 * Cleanup Genericons folder.
+* Adjust bottom margin for blockquotes.
+* Add editor style.
 
-= 1.0 - Mar 12 2015 =
-* Initial release.
+= 13 March 2015 =
+* Further tweak on social menu.
+* Style tweak for the social menu.
+* Alignment tweak
+* CSS for RTL
+* Make sure the open sidear is on top of footer.
+* Style tweaks.
+
+= 11 March 2015 =
+* Minor style tweaks.
+* Social links style tweaks.
+* Nascar form style tweak.
+* Make sure Author Grid widget don't have bullets and margin left.
+* Narrow widget area, style tweaks for some elements in the sidebar.
+* Darken the sidebar just a little bit to make obvious if it's opened.
+* Display main navigation larger than 924px wide viewport.
+
+= 10 March 2015 =
+* Format clean up
+* Remove underline from native audio controler.
+* Make sure Google Maps and Instagram embed have right margin.
+* Remove width value from big captions. Minor style tweak for focus style.
+* Stop image inside table overhang.
+* Jetpack comments style tweak
+* Style tweaks
+* More tweak the overhangign image and license declaration for the new image on screenshot.
+* Overhanging image tweak
+
+= 9 March 2015 =
+* Limit the overhangign image to full size image.
+* Clean up
+* Cancelling floats for overhangign images.
+* Style tweaks.
+* Style tweaks
+* Clean up
+* Make sure latex images don't overhang.
+* A new screenshot
+* Clean up
+* Non uppercase menu items. Add visual feedback for hovered sticky post title.
+* Minor style tweaks.
+* Large content width for outdented images for large screen.
+
+= 8 March 2015 =
+* "More" icon for sidebar toggle once the main menu appears on a large screen.
+* More outdented images and quotes for larger screens.
+* Pull quotes
+* One column layout, outdented images.
+
+= 6 March 2015 =
+* Remove widont from titles.
+* Page links tweak.
+* Make dropdown look good.
+* Fix dropdown arrow.
+* Style tweak.
+
+= 5 March 2015 =
+* Clean-up.
+* Site title size tweak
+* Handle a long menu nicely.
+
+= 4 March 2015 =
+* Site logo tweak and some clean up.
+* Reset letter spacing for related post titles.
+* Non sticky header.
+* This theme requires at least 4.1
+* Add custom description to the tagline control because it's hidden in this theme.
+* Move custom header image out of masthead.
+* Add a body class when a custom menu is active.
+* A new screenshot.
+* Add missing width value.
+* Let user have non uppercase site title as default.
+* Style tweak
+* Show main navigation as default on large screen.
+
+= 3 March 2015 =
+* WP.com style
+
+= 2 March 2015 =
+* Remove unnecessary codekit cache directory.
+* Clean up theme file structure.
+* Initial import.
 
 == Credits ==
 

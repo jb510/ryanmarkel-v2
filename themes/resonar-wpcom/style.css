@@ -2,7 +2,7 @@
 Theme Name: Resonar
 Theme URI: https://wordpress.com/themes/resonar/
 Description: Resonar is an elegant blog theme that features full-screen featured images.
-Version: 1.0.3
+Version: 1.0.6
 Author: Automattic
 Author URI: https://wordpress.com/themes/
 License: GNU General Public License v2 or later
@@ -1999,6 +1999,10 @@ div.entry-date + .entry-title {
 	margin-top: 12px;
 }
 
+.entry-summary img {
+	display: none;
+}
+
 .entry-title {
 	clear: none;
 	font-size: 22px;
@@ -3561,6 +3565,10 @@ iframe[id*="twitter-widget-"] {
 	text-transform: uppercase;
 }
 
+.entry-summary .sharedaddy {
+	display: none !important;
+}
+
 
 /**
  * 15.8 Related Posts
@@ -4368,7 +4376,7 @@ iframe[id*="twitter-widget-"] {
 	.comment-author .avatar {
 		height: 56px;
 		margin-right: 16px;
-		top: 7px;
+		top: 4px;
 		width: 56px;
 	}
 

@@ -1,4 +1,5 @@
 /* global screenReaderText */
+/* global toggleButtonText */
 /**
  * Theme functions file.
  *
@@ -6,14 +7,17 @@
  */
 
 ( function( $ ) {
-	var $body         = $( document.body ),
-	    $window       = $( window ),
-	    sidebar       = $( '#sidebar' ),
-	    sidebarToggle = $( '#masthead' ).find( '#sidebar-toggle' ),
-	    resizeTimer,
+	var $body             = $( document.body ),
+	    $window           = $( window ),
+	    sidebar           = $( '#sidebar' ),
+	    widgets           = $( '#sidebar' ).find( '#secondary' ),
+	    social            = $( '#sidebar' ).find( '#social-navigation' ),
+	    sidebarToggle     = $( '#masthead' ).find( '#sidebar-toggle' ),
+	    menu              = $( '#masthead' ).find( '.nav-menu' ),
+	    mastheadHeight    = $( '#masthead' ).outerHeight(),
+	    headerImageHeight = $( '.header-image' ).height(),
 	    toolbarHeight,
-	    mastheadHeight,
-	    headerImageHeight;
+	    resizeTimer;
 
 	// Add dropdown toggle that display child menu items.
 	$( '#sidebar .main-navigation .menu-item-has-children > a' ).after( '<button class="dropdown-toggle" aria-expanded="false">' + screenReaderText.expand + '</button>' );
@@ -38,31 +42,32 @@
 
 	// Enable sidebar toggle.
 	( function() {
-		var sidebarMenu, widgets, social;
+		var sidebarMenu = sidebar.find( '.main-navigation' );
 		if ( ! sidebar || ! sidebarToggle ) {
 			return;
 		}
 
 		// Hide button if there are no widgets and the menus are missing or empty.
-		sidebarMenu  = sidebar.find( '.main-navigation' );
-		widgets      = sidebar.find( '#secondary' );
-		social       = sidebar.find( '#social-navigation' );
 		if ( ! widgets.length && ! social.length && ( ! sidebarMenu || ! sidebarMenu.children().length ) ) {
 			sidebarToggle.hide();
 			return;
 		}
 
+		// Add a toggle button text.
+		sidebarToggle.append( toggleButtonText.widgets );
+
+		// Add an initial value for the attribute.
+		$( sidebarToggle ).add( sidebar ).attr( 'aria-expanded', 'false' );
+
 		sidebarToggle.on( 'click.resonar', function() {
 			$body.toggleClass( 'sidebar-open' ).trigger( 'resize' );
 			$( this ).toggleClass( 'toggled-on' );
-			$( this ).attr( 'aria-expanded', sidebar.attr( 'aria-expanded' ) === 'true' ? 'false' : 'true');
-			sidebar.attr( 'aria-hidden', sidebar.attr( 'aria-hidden' ) === 'false' ? 'true' : 'false');
+			$( this ).add( sidebar ).attr( 'aria-expanded', $( this ).add( sidebar ).attr( 'aria-expanded' ) === 'false' ? 'true' : 'false');
 		} );
 	} )();
 
 	// Fix sub-menus for touch devices and better focus for hidden submenu items for accessibility.
 	( function() {
-		var menu = $( '#masthead' ).find( '.nav-menu' );
 		if ( ! menu || ! menu.children().length ) {
 			return;
 		}
@@ -86,43 +91,37 @@
 
 	// Make Featured image full-screen.
 	function fullscreenFeaturedImage() {
-		var entryHeaderBackground, entryHeaderHeight, entryHeaderOffset = 0, windowWidth;
-		entryHeaderBackground = $( '.entry-header-background' );
+		var entryHeaderBackground = $( '.entry-header-background' ),
+		    entryHeaderOffset     = 0,
+		    windowWidth           = $window.width();
 
 		if ( ! entryHeaderBackground ) {
 			return;
 		}
-
-		toolbarHeight     = $body.is( '.admin-bar' ) ? $( '#wpadminbar' ).height() : 0;
-		mastheadHeight    = $( '#masthead' ).outerHeight();
-		headerImageHeight = $( '.header-image' ).height();
-		entryHeaderHeight = $window.height() - ( toolbarHeight + mastheadHeight + headerImageHeight );
-		windowWidth       = $window.width();
 
 		// 1088 is site-main width.
 		if ( 1088 < windowWidth ) {
 			entryHeaderOffset = ( windowWidth - 1088 ) / 2;
 		}
 
+		toolbarHeight = $body.is( '.admin-bar' ) ? $( '#wpadminbar' ).height() : 0;
+
 		entryHeaderBackground.css( {
-			'height': entryHeaderHeight + 'px',
-			'margin-left':  '-' + entryHeaderOffset + 'px',
-			'margin-right':  '-' + entryHeaderOffset + 'px'
+			'height': $window.height() - ( toolbarHeight + mastheadHeight + headerImageHeight ) + 'px',
+			'margin-left': '-' + entryHeaderOffset + 'px',
+			'margin-right': '-' + entryHeaderOffset + 'px'
 		} );
 	}
 
 	// Minimum height for sidebar.
 	function sidebarSize() {
-		var sidebarMinHeight;
-
 		if ( ! sidebar ) {
 			return;
 		}
 
-		toolbarHeight     = $body.is( '.admin-bar' ) ? $( '#wpadminbar' ).height() : 0;
-		mastheadHeight    = $( '#masthead' ).outerHeight();
-		headerImageHeight = $( '.header-image' ).height();
-		sidebarMinHeight  = $window.height() - ( toolbarHeight + mastheadHeight + headerImageHeight );
+		toolbarHeight = $body.is( '.admin-bar' ) ? $( '#wpadminbar' ).height() : 0;
+
+		var sidebarMinHeight  = $window.height() - ( toolbarHeight + mastheadHeight + headerImageHeight );
 
 		sidebar.css( {
 			'min-height': sidebarMinHeight + 'px'
@@ -161,9 +160,7 @@
 	// Add body classes to modify layout.
 	function bodyClasses() {
 		if ( $window.width() > 924 ) {
-			var widgets             = sidebar.find( '#secondary' ),
-			    social              = sidebar.find( '#social-navigation' ),
-			    masthead            = $( '#masthead' ),
+			var masthead            = $( '#masthead' ),
 			    siteBrandingWidth   = masthead.find( '.site-branding' ).width() + 32,
 		        mainNavigationWidth = masthead.find( '.main-navigation' ).width() - 16,
 		        mastheadWidth       = masthead.width();
@@ -182,7 +179,7 @@
 		} else {
 			$body.removeClass( 'no-sidebar, menu-left' );
 		}
-	};
+	}
 
 	// Add a class to big image and caption >= 1088px.
 	function bigImageClass() {
@@ -208,6 +205,21 @@
 		} );
 	}
 
+	// Change the toggle button text.
+	function toggleButtonTxt() {
+		if ( $window.width() < 924 ) {
+			if ( ( menu.length || social.length ) && widgets.length ) {
+				sidebarToggle.html( toggleButtonText.both );
+			} else if ( ( menu.length || social.length ) && ! widgets.length ) {
+				sidebarToggle.html( toggleButtonText.menu );
+			} else {
+				sidebarToggle.html( toggleButtonText.widgets );
+			}
+		} else {
+			sidebarToggle.html( toggleButtonText.widgets );
+		}
+	}
+
 	// Close Sidebar with an escape key.
 	$( document ).keyup( function( e ) {
 		if ( e.keyCode === 27 && sidebarToggle.hasClass( 'toggled-on' ) ) {
@@ -224,6 +236,7 @@
 				sidebarSize();
 				fullscreenFeaturedImage();
 				bodyClasses();
+				toggleButtonTxt();
 			}, 300 );
 		} );
 
@@ -231,12 +244,14 @@
 		fullscreenFeaturedImage();
 		bodyClasses();
 		bigImageClass();
+		toggleButtonTxt();
 		scroll();
 
 		for ( var i = 1; i < 4; i++ ) {
 			setTimeout( sidebarSize, 100 * i );
 			setTimeout( fullscreenFeaturedImage, 100 * i );
 			setTimeout( bodyClasses, 100 * i );
+			setTimeout( toggleButtonTxt, 100 * i );
 		}
 	} );
 } )( jQuery );

@@ -24,7 +24,7 @@ if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) || is_active_sidebar(
 		<?php endif; ?>
 
 		<?php if ( has_nav_menu( 'social' ) ) : ?>
-			<nav id="social-navigation" class="social-navigation" role="navigation">
+			<nav id="social-navigation" class="social-navigation">
 				<?php
 					// Social links navigation menu.
 					wp_nav_menu( array(

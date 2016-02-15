@@ -2,18 +2,17 @@
 # This file is distributed under the same license as the Resonar package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-04-06 03:03:57+0000\n"
+"PO-Revision-Date: 2015-06-09 03:59:24+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: GlotPress/0.1\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
 "Project-Id-Version: Resonar\n"
 
-#. Description of the plugin/theme
-#: wp-content/themes/pub/resonar/style.css
-msgid "Resonar is an elegant blog theme that features full-screen featured images."
-msgstr ""
+#: functions.php:258
+msgid "Menu &amp; Widgets"
+msgstr "گزینگان و ابزارک‌ها"
 
 #: single.php:31
 msgid "Previous post:"
@@ -31,7 +30,7 @@ msgstr "نوشتۀ پسین:"
 msgid "Next"
 msgstr "بعدی"
 
-#: sidebar.php:15
+#: functions.php:256 sidebar.php:15
 msgid "Menu"
 msgstr "گزینگان"
 
@@ -39,20 +38,21 @@ msgstr "گزینگان"
 msgid "Search Results for: %s"
 msgstr "نتایج جست‌وجو برای: %s"
 
+#. translators: %s: Name of current post.
 #. translators: %s: Name of current post
-#: inc/template-tags.php:195
+#: content.php:32 inc/template-tags.php:210
 msgid "Continue reading %s"
 msgstr "به خواندن %s ادامه دهید"
 
-#: inc/template-tags.php:130
+#: inc/template-tags.php:132
 msgid "% Comments"
 msgstr "% دیدگاه"
 
-#: inc/template-tags.php:130
+#: inc/template-tags.php:132
 msgid "1 Comment"
 msgstr "۱ دیدگاه"
 
-#: inc/template-tags.php:130
+#: inc/template-tags.php:132
 msgid "Leave a comment"
 msgstr "بیان دیدگاه"
 
@@ -66,17 +66,7 @@ msgctxt "Used before tag names."
 msgid "Tags"
 msgstr "برچسب‌ها"
 
-#: inc/template-tags.php:102
-msgctxt "Used before project type names."
-msgid "Project Types"
-msgstr ""
-
-#: inc/template-tags.php:110
-msgctxt "Used before project tag names."
-msgid "Project Tags"
-msgstr ""
-
-#: inc/template-tags.php:121
+#: inc/template-tags.php:123
 msgctxt "Used before full size attachment link."
 msgid "Full size"
 msgstr "اندازه کامل"
@@ -86,8 +76,8 @@ msgctxt "Used before publish date."
 msgid "Posted on"
 msgstr "ارسال شده در"
 
-#: inc/template-tags.php:81 inc/template-tags.php:89 inc/template-tags.php:99
-#: inc/template-tags.php:107
+#: inc/template-tags.php:81 inc/template-tags.php:89 inc/template-tags.php:101
+#: inc/template-tags.php:109
 msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr "، "
@@ -113,14 +103,6 @@ msgctxt "Parent post link"
 msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
 msgstr "<span class=\"meta-nav\">منتشره در</span><span class=\"post-title\">%title</span>"
 
-#: inc/back-compat.php:36 inc/back-compat.php:46 inc/back-compat.php:59
-msgid "Resonar requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again."
-msgstr ""
-
-#: inc/customizer.php:19
-msgid "Tagline is hidden in this theme."
-msgstr ""
-
 #: image.php:23
 msgid "Next Image"
 msgstr "تصویر پسین"
@@ -129,11 +111,11 @@ msgstr "تصویر پسین"
 msgid "Previous Image"
 msgstr "تصویر پیشین"
 
-#: header.php:48
+#: functions.php:257
 msgid "Widgets"
 msgstr "ابزارک‌ها"
 
-#: functions.php:203
+#: functions.php:252
 msgid "collapse child menu"
 msgstr "بستن زیرفهرست"
 
@@ -144,48 +126,35 @@ msgstr "پرش به محتوا"
 #. translators: If there are characters in your language that are not supported
 #. by Inconsolata, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:137
+#: functions.php:186
 msgctxt "Inconsolata font: on or off"
 msgid "on"
 msgstr "off"
 
-#: functions.php:145
-msgctxt "Add new subset (cyrillic)"
-msgid "no-subset"
-msgstr ""
-
-#: functions.php:202
+#: functions.php:251
 msgid "expand child menu"
 msgstr "بازکردن زیرفهرست"
 
 #. translators: If there are characters in your language that are not supported
 #. by Playfair Display, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:132
+#: functions.php:181
 msgctxt "Playfair Display font: on or off"
 msgid "on"
 msgstr "روشن"
 
 #. translators: If there are characters in your language that are not supported
-#. by Libre Baskerville, translate this to 'off'. Do not translate into your
-#. own language.
-#: functions.php:122
-msgctxt "Libre Baskerville font: on or off"
-msgid "on"
-msgstr ""
-
-#. translators: If there are characters in your language that are not supported
 #. by Lato, translate this to 'off'. Do not translate into your own language.
-#: functions.php:127
+#: functions.php:176
 msgctxt "Lato font: on or off"
 msgid "on"
 msgstr "روشن"
 
-#: functions.php:99
+#: functions.php:148
 msgid "Add widgets here to appear in your sidebar."
 msgstr "ابزارک‌هایی که می‌خواهید در نوار کناری نمایش یابند را اینجا بیفزایید."
 
-#: functions.php:97
+#: functions.php:146
 msgid "Widget Area"
 msgstr "محدوده ابزارک"
 
@@ -212,10 +181,6 @@ msgstr "http://wordpress.org/"
 #: content-page.php:50 content-single.php:59 image.php:71
 msgid "Edit"
 msgstr "ویرایش"
-
-#: content-page.php:22 content-single.php:24
-msgid "Scroll down to see more content"
-msgstr ""
 
 #: content-page.php:40 content-single.php:46 image.php:59
 msgid "Pages:"

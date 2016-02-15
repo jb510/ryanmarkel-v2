@@ -96,6 +96,8 @@ function resonar_entry_meta() {
 	}
 
 	if ( 'jetpack-portfolio' == get_post_type() ) {
+		global $post;
+
 		$project_types_list = get_the_term_list( $post->ID, 'jetpack-portfolio-type', '', _x( ', ', 'Used between list items, there is a space after the comma.', 'resonar' ), '' );
 		if ( $project_types_list ) {
 			printf( '<span class="cat-links"><span class="screen-reader-text">%1$s </span>%2$s</span>',
@@ -182,19 +184,32 @@ add_action( 'save_post',     'resonar_category_transient_flusher' );
 
 if ( ! function_exists( 'resonar_excerpt_more' ) && ! is_admin() ) :
 /**
- * Replaces "[...]" (appended to automatically generated excerpts) with ... and a 'Continue reading' link.
+ * Replaces "[...]" (appended to automatically generated excerpts) with ...
  *
  * @since Resonar 1.0
- *
- * @return string 'Continue reading' link prepended with an ellipsis.
  */
 function resonar_excerpt_more( $more ) {
-	$link = sprintf( '<a href="%1$s" class="more-link">%2$s</a>',
+	return ' &hellip;';
+}
+add_filter( 'excerpt_more', 'resonar_excerpt_more' );
+endif;
+
+if ( ! function_exists( 'resonar_continue_reading' ) && ! is_admin() ) :
+/**
+ * Adds a "Continue reading" link to all instances of the_excerpt
+ *
+ * @since Resonar 1.0.6
+ *
+ * @return string The excerpt with a 'Continue reading' link appended.
+ */
+function resonar_continue_reading( $the_excerpt ) {
+	$the_excerpt = sprintf( '%1$s <a href="%2$s" class="more-link">%3$s</a>',
+		$the_excerpt,
 		esc_url( get_permalink( get_the_ID() ) ),
 		/* translators: %s: Name of current post */
 		sprintf( __( 'Continue reading %s', 'resonar' ), '<span class="screen-reader-text">' . get_the_title( get_the_ID() ) . '</span>' )
-		);
-	return ' &hellip; ' . $link;
+	);
+	return $the_excerpt;
 }
-add_filter( 'excerpt_more', 'resonar_excerpt_more' );
+add_filter( 'the_excerpt', 'resonar_continue_reading', 9 );
 endif;

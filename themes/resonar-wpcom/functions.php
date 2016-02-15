@@ -74,8 +74,7 @@ function resonar_setup() {
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'resonar_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
+		'default-color'    => 'ffffff',
 		'wp-head-callback' => 'resonar_custom_background_cb'
 	) ) );
 
@@ -202,7 +201,7 @@ function resonar_fonts_url() {
 		$fonts_url = add_query_arg( array(
 			'family' => urlencode( implode( '|', $fonts ) ),
 			'subset' => urlencode( $subsets ),
-		), '//fonts.googleapis.com/css' );
+		), 'https://fonts.googleapis.com/css' );
 	}
 
 	return $fonts_url;
@@ -251,6 +250,12 @@ function resonar_scripts() {
 	wp_localize_script( 'resonar-script', 'screenReaderText', array(
 		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'resonar' ) . '</span>',
 		'collapse' => '<span class="screen-reader-text">' . __( 'collapse child menu', 'resonar' ) . '</span>',
+	) );
+
+	wp_localize_script( 'resonar-script', 'toggleButtonText', array(
+		'menu'    => __( 'Menu', 'resonar' ),
+		'widgets' => __( 'Widgets', 'resonar' ),
+		'both'    => __( 'Menu &amp; Widgets', 'resonar' ),
 	) );
 }
 add_action( 'wp_enqueue_scripts', 'resonar_scripts' );
