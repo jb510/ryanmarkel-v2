@@ -34,6 +34,7 @@
 		"ryanmarkel/marginal": "~1.0",
 		"ryanmarkel/beacon": "~0.0",
 		"ryanmarkel/ryanmarkel-functionality": "~1.0",
-		"wpackagist-plugin/debug-bar": "~0.0"
+		"wpackagist-plugin/debug-bar": "~0.0",
+		"wpackagist-theme/twentysixteen": "~0.0"
 	}
 }
