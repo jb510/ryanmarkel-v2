@@ -1,23 +1,24 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5da1c01bbd0596b546d273127981cd6f",
+    "hash": "3d9754470931049f0b4b631d262b9f30",
+    "content-hash": "480f685edf12196552075bd93dfdafb0",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.0.23",
+            "version": "v1.0.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e"
+                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/6213d900e92647831f7a406d5c530ea1f3d4360e",
-                "reference": "6213d900e92647831f7a406d5c530ea1f3d4360e",
+                "url": "https://api.github.com/repos/composer/installers/zipball/36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
+                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
                 "shasum": ""
             },
             "require": {
@@ -39,8 +40,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "Composer\\Installers\\": "src/"
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -55,12 +56,14 @@
                 }
             ],
             "description": "A multi-framework Composer library installer",
-            "homepage": "http://composer.github.com/installers/",
+            "homepage": "https://composer.github.io/installers/",
             "keywords": [
                 "Craft",
                 "Dolibarr",
                 "Hurad",
+                "ImageCMS",
                 "MODX Evo",
+                "Mautic",
                 "OXID",
                 "SMF",
                 "Thelia",
@@ -102,7 +105,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2016-01-27 12:54:22"
+            "time": "2016-04-13 19:46:30"
         },
         {
             "name": "ryanmarkel/beacon",
@@ -221,11 +224,39 @@
             "time": "2015-05-25 02:47:50"
         },
         {
+            "name": "tlovett1/safe-redirect-manager",
+            "version": "1.7.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tlovett1/Safe-Redirect-Manager.git",
+                "reference": "602718cc9ae411f89bf997a7c6d5c5a911fb2ea6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tlovett1/Safe-Redirect-Manager/zipball/602718cc9ae411f89bf997a7c6d5c5a911fb2ea6",
+                "reference": "602718cc9ae411f89bf997a7c6d5c5a911fb2ea6",
+                "shasum": ""
+            },
+            "type": "wordpress-plugin",
+            "authors": [
+                {
+                    "name": "Taylor Lovett",
+                    "email": "taylorl@10up.com"
+                }
+            ],
+            "description": "Easily and safely manage HTTP redirects.",
+            "support": {
+                "source": "https://github.com/tlovett1/Safe-Redirect-Manager/tree/1.7.8",
+                "issues": "https://github.com/tlovett1/Safe-Redirect-Manager/issues"
+            },
+            "time": "2015-12-16 15:58:34"
+        },
+        {
             "name": "wpackagist-plugin/debug-bar",
             "version": "0.8.4",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/debug-bar/",
+                "url": "https://plugins.svn.wordpress.org/debug-bar/",
                 "reference": "tags/0.8.4"
             },
             "dist": {
@@ -245,7 +276,7 @@
             "version": "0.1.20151205",
             "source": {
                 "type": "svn",
-                "url": "http://themes.svn.wordpress.org/twentysixteen/",
+                "url": "https://themes.svn.wordpress.org/twentysixteen/",
                 "reference": "0.1.20151205"
             },
             "dist": {
